@@ -1,0 +1,6 @@
+mcp:
+  servers:
+    reverb-ai-image-editor:
+      command: "python"
+      args: ["reverb_mcp.py"]
+      description: "demo mcp service written with fastmcp by kevin"

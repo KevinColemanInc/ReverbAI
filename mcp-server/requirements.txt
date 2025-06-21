@@ -4,3 +4,4 @@ streamlit
 mcp
 mcp-agent
 anthropic
+fastmcp
