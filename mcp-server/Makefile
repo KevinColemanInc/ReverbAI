@@ -1,4 +1,4 @@
-PYTHON ?= python3.11
+PYTHON ?= python3.12
 PIP := $(PYTHON) -m pip
 
 .PHONY: install run help
