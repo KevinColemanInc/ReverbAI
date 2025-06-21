@@ -52,7 +52,7 @@ if user_prompt := st.chat_input("Describe your rebranding request (e.g. 'Replace
             try:
                 # --- Call MCP Agent with saved image path ---
                 result = asyncio.run(call_agent(TEMP_PATH, user_prompt))
-
+                print("result from mcp: ", result)
                 # Text Response
                 st.session_state.messages.append({
                     "role": "assistant", "type": "text", "content": result.text
