@@ -26,7 +26,6 @@ async def call_agent(image_path: str, prompt: str):
             # Attach an OpenAI LLM to the agent (defaults to GPT-4o)
             llm = await finder_agent.attach_llm(OpenAIAugmentedLLM)
 
-
             # This will perform a file lookup and read using the filesystem server
             result = await llm.generate_str(
                 message="Change image so it is promoting the energy drink brand ZAPPED at file path boy.png use gen_image mcp api"
