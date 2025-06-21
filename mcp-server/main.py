@@ -26,17 +26,17 @@ async def example_usage():
             # Attach an OpenAI LLM to the agent (defaults to GPT-4o)
             llm = await finder_agent.attach_llm(OpenAIAugmentedLLM)
 
+
             # This will perform a file lookup and read using the filesystem server
             result = await llm.generate_str(
-                message="add 55 and the number sixteen"
+                message="Change image so it is promoting the energy drink brand ZAPPED at file path boy.png use gen_image mcp api"
             )
-            logger.info(f"the result for the llm is: {result}")
 
-            # Uses the fetch server to fetch the content from URL
             result = await llm.generate_str(
-                message="summarize the following text:\n\nWhile similar capabilities can be implemented with asyncio in-memory execution, Temporal provides these features out-of-the-box and is recommended for production deployments."
+                message="Add the text: '50% discount if you show this image'. the image path is watermarked.png"
             )
-            logger.info(f"summary: {result}")
+
+            logger.info(f"the result for the llm is: {result}")
 
 if __name__ == "__main__":
     asyncio.run(example_usage())

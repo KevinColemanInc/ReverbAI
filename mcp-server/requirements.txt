@@ -5,3 +5,5 @@ mcp
 mcp-agent
 anthropic
 fastmcp
+pyyaml
+Pillow
