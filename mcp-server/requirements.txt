@@ -1,0 +1,6 @@
+httpx
+mcp
+streamlit
+mcp
+mcp-agent
+anthropic
